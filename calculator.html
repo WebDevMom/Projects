@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,34 +9,36 @@
   </head>
   <body>
     <div class="wrapper">
-      <section class="screen">0</section>
+      <section id="screen" class="screen">0</section>
       <section class="calc-buttons">
         <div class="calc-button-row">
-          <button class="calc-button double">C</button>
-          <button class="calc-button">&larr;</button>
-          <button class="calc-button">&divide;</button>
+          <button onclick="clearDisplay()" class="calc-button double">C</button>
+          <button onclick="backspace()" class="calc-button">&larr;</button>
+          <button onclick="divide()" class="calc-button">&divide;</button>
         </div>
         <div class="calc-button-row">
-          <button class="calc-button">7</button>
-          <button class="calc-button">8</button>
-          <button class="calc-button">9</button>
-          <button class="calc-button">&#215;</button>
+          <button onclick="numSeven()" class="calc-button">7</button>
+          <button onclick="numEight()" class="calc-button">8</button>
+          <button onclick="numNine()" class="calc-button">9</button>
+          <button onclick="multiply()" class="calc-button">&#215;</button>
         </div>
         <div class="calc-button-row">
-          <button class="calc-button">4</button>
-          <button class="calc-button">5</button>
-          <button class="calc-button">6</button>
-          <button class="calc-button">&#8722;</button>
+          <button onclick="numFour()" class="calc-button">4</button>
+          <button onclick="numFive()" class="calc-button">5</button>
+          <button onclick="numSix()" class="calc-button">6</button>
+          <button onclick="subtract()" class="calc-button">&#8722;</button>
         </div>
         <div class="calc-button-row">
-          <button class="calc-button">1</button>
-          <button class="calc-button">2</button>
-          <button class="calc-button">3</button>
-          <button class="calc-button">&plus;</button>
+          <button onclick="numOne()" class="calc-button">1</button>
+          <button onclick="numTwo()" class="calc-button">2</button>
+          <button onclick="numThree()" class="calc-button">3</button>
+          <button onclick="add()" class="calc-button">&plus;</button>
         </div>
         <div class="calc-button-row">
-          <button class="calc-button triple">0</button>
-          <button class="calc-button">&equals;</button>
+          <button onclick="posNeg()" class="calc-button">&plusmn;</button>
+          <button onclick="numZero()" class="calc-button">0</button>
+          <button onclick="point()" class="calc-button">.</button>
+          <button onclick="equals()" class="calc-button">&equals;</button>
         </div>
       </section>
     </div>
