@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 * {
   margin: 0;
@@ -12,11 +11,11 @@ html {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
   height: 100vh;
   color: #333;
-  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  background-image: linear-gradient(to top left, #59bfd337 0%, #122c4b 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,7 +58,7 @@ main {
 .score {
   font-size: 8rem;
   font-weight: 300;
-  color: #c7365f;
+  color: #36a3c7;
   margin-bottom: auto;
 }
 
@@ -78,10 +77,10 @@ main {
 }
 
 .current {
-  background-color: #c7365f;
+  background-color: #36a3c7;
   opacity: 0.8;
-  border-radius: 9px;
-  color: #fff;
+  border-radius: 15px;
+  color: rgb(208, 222, 225);
   width: 65%;
   padding: 2rem;
   text-align: center;
@@ -91,12 +90,12 @@ main {
 .current-label {
   text-transform: uppercase;
   margin-bottom: 1rem;
-  font-size: 1.7rem;
-  color: #ddd;
+  font-size: 3.25rem;
+  color: rgb(208, 222, 225);
 }
 
 .current-score {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 /* ABSOLUTE POSITIONED ELEMENTS */
@@ -108,35 +107,30 @@ main {
   background: none;
   border: none;
   font-family: inherit;
-  font-size: 1.8rem;
+  font-size: 3rem;
   text-transform: uppercase;
   cursor: pointer;
-  font-weight: 400;
+  font-weight: 700;
   transition: all 0.2s;
-
   background-color: white;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
-
-  padding: 0.7rem 2.5rem;
-  border-radius: 50rem;
+  padding: 0.7rem 1.8rem;
+  border-radius: 15px;
   box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
 }
 
-.btn::first-letter {
-  font-size: 2.4rem;
-  display: inline-block;
-  margin-right: 0.7rem;
-}
-
 .btn--new {
-  top: 4rem;
+  top: 7rem; 
 }
 .btn--roll {
-  top: 39.3rem;
+  top: 20rem;
+  width: 25rem;
+  height: 15rem;
 }
 .btn--hold {
-  top: 46.1rem;
+  top: 43rem;
+  
 }
 
 .btn:active {
@@ -148,20 +142,11 @@ main {
   outline: none;
 }
 
-.dice {
-  position: absolute;
-  left: 50%;
-  top: 16.5rem;
-  transform: translateX(-50%);
-  height: 10rem;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
-}
-
 .player--winner {
-  background-color: #2f2f2f;
+  background-color: #005580;
 }
 
 .player--winner .name {
   font-weight: 700;
-  color: #c7365f;
+  color: #3664c7;
 }

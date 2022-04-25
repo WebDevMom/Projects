@@ -1,10 +1,10 @@
 body {
-  background-color: dodgerblue;
+  background-image: linear-gradient(to top left);
 }
-
 button {
   background-color: blue;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: black;
   font-weight: 400;
+  height: 3rem
 }
